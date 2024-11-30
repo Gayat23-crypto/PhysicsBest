@@ -1,148 +1,200 @@
-<!Doctype html/>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Blog Title</title> <!-- Change the title here -->
-  <!-- CSS link -->
-</head>
-
-<body>
-    <h1>Welcome to My Blog</h1>
-    <p>This is the homepage.</p>
+  <title>My Tech Blog</title>
   <style>
     /* General Body Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Header Styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
 
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
 
-header nav {
-  margin-top: 10px;
-}
+    header nav {
+      margin-top: 10px;
+    }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.2rem;
-}
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
 
-header nav a:hover {
-  text-decoration: underline;
-}
+    header nav a:hover {
+      text-decoration: underline;
+    }
 
-/* Main Content Styles */
-main {
-  padding: 2rem;
-}
+    /* Main Content Styles */
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+    }
 
-article {
-  background-color: #fff;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    article {
+      background-color: #fff;
+      margin-right: 2rem;
+      flex-basis: 70%;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-article h2 {
-  font-size: 2rem;
-  color: #333;
-}
+    article h2 {
+      font-size: 2rem;
+      color: #333;
+    }
 
-article p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
+    article p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
 
-/* Sidebar Styles */
-aside {
-  background-color: #f8f8f8;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    /* Sidebar Styles */
+    aside {
+      background-color: #f8f8f8;
+      padding: 1.5rem;
+      flex-basis: 25%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-aside h3 {
-  color: #333;
-  font-size: 1.8rem;
-}
+    aside h3 {
+      color: #333;
+      font-size: 1.8rem;
+    }
 
-aside ul {
-  list-style: none;
-  padding: 0;
-}
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
 
-aside ul li {
-  margin: 10px 0;
-}
+    aside ul li {
+      margin: 10px 0;
+    }
 
-aside ul li a {
-  color: #007BFF;
-  text-decoration: none;
-}
+    aside ul li a {
+      color: #007BFF;
+      text-decoration: none;
+    }
 
-aside ul li a:hover {
-  text-decoration: underline;
-}
+    aside ul li a:hover {
+      text-decoration: underline;
+    }
 
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
 
-footer p {
-  margin: 0;
-}
+    footer p {
+      margin: 0;
+    }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header {
-    text-align: left;
-  }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        text-align: left;
+      }
 
-  header nav {
-    display: flex;
-    justify-content: space-between;
-  }
+      header nav {
+        display: flex;
+        justify-content: space-between;
+      }
 
-  main {
-    padding: 1rem;
-  }
+      main {
+        flex-direction: column;
+      }
 
-  article {
-    padding: 1rem;
-  }
+      article {
+        margin-right: 0;
+        padding: 1rem;
+      }
 
-  aside {
-    padding: 1rem;
-  }
-}
-
+      aside {
+        padding: 1rem;
+      }
+    }
   </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Tech Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Article Section -->
+    <article>
+      <h2>Latest Tech Trends in 2024</h2>
+      <p>Discover the latest innovations and trends in the tech world for the year 2024. From AI to 5G, here's what's shaping the future.</p>
+      <button id="loadMore">Read More</button>
+      <p id="extraContent" style="display:none;">In 2024, artificial intelligence and machine learning continue to revolutionize industries. Expect to see advancements in autonomous vehicles, robotics, and more...</p>
+    </article>
+
+    <!-- Sidebar Section -->
+    <aside>
+      <h3>Popular Articles</h3>
+      <ul>
+        <li><a href="#">The Rise of Quantum Computing</a></li>
+        <li><a href="#">How 5G Will Change Our Lives</a></li>
+        <li><a href="#">The Future of Cryptocurrency</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 My Tech Blog. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script>
+    // JavaScript for interactivity
+    document.getElementById('loadMore').addEventListener('click', function() {
+      const extraContent = document.getElementById('extraContent');
+      if (extraContent.style.display === 'none') {
+        extraContent.style.display = 'block';
+        this.textContent = 'Show Less';
+      } else {
+        extraContent.style.display = 'none';
+        this.textContent = 'Read More';
+      }
+    });
+  </script>
+
 </body>
 </html>
